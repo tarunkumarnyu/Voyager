@@ -6,7 +6,7 @@ Built for the Robot Vision course (ROB-GY 6203) at NYU. The system constructs a 
 
 ## Demo
 
-<video src="https://github.com/tarunkumarnyu/Voyager/raw/main/demo.mp4" controls width="100%"></video>
+https://github.com/tarunkumarnyu/Voyager/releases/download/v1.0/demo.mp4
 
 ## Pipeline
 
