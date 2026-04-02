@@ -10,6 +10,10 @@ Built for the Robot Vision course (ROB-GY 6203) at NYU. The system constructs a 
 https://github.com/user-attachments/assets/c6fbba8e-42fb-4270-b5b9-73dc540db5ba
 
 
+https://github.com/user-attachments/assets/b0944968-800c-4be5-b0e6-8bc9ab2a3ff7
+
+
+
 ## Pipeline
 
 ![Voyager Pipeline](pipeline_light.png)
