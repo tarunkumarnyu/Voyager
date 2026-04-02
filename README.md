@@ -4,6 +4,10 @@ Navigate a robot through a maze using only camera images — no map, GPS, or odo
 
 Built for the Robot Vision course (ROB-GY 6203) at NYU. The system constructs a topological graph from explored images offline, then navigates in real-time by matching the robot's live camera feed against the graph using learned visual features.
 
+## Pipeline
+
+![Voyager Pipeline](pipeline_light.png)
+
 ## How It Works
 
 **Phase 1 — Graph Building (Offline)**
