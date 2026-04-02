@@ -4,6 +4,10 @@ Navigate a robot through a maze using only camera images — no map, GPS, or odo
 
 Built for the Robot Vision course (ROB-GY 6203) at NYU. The system constructs a topological graph from explored images offline, then navigates in real-time by matching the robot's live camera feed against the graph using learned visual features.
 
+## Demo
+
+<video src="https://github.com/tarunkumarnyu/Voyager/raw/main/demo.mp4" controls width="100%"></video>
+
 ## Pipeline
 
 ![Voyager Pipeline](pipeline_light.png)
@@ -25,21 +29,6 @@ Built for the Robot Vision course (ROB-GY 6203) at NYU. The system constructs a 
 2. Plan: Run A* shortest path from current node to goal
 3. Execute: Move toward next waypoint, re-localize and re-plan every frame
 4. Recover: Stuck detection (>10 frames same location) triggers alternating random turns; search mode rotates up to 6 times to find target
-
-```
-OFFLINE:
-  Maze Images → CosPlace Features → Top-5 NN → SuperGlue Verify → Topological Graph
-
-ONLINE:
-  Camera Frame → CosPlace Retrieval → Graph Localization
-                      ↓
-                A* Shortest Path → Next Waypoint
-                      ↓
-                SuperGlue Match → Relative Heading
-                      ↓
-                Motor Control → Stuck Recovery if needed
-```
-
 ## Project Structure
 
 ```
