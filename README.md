@@ -1,5 +1,13 @@
 # Voyager — Visual Maze Navigation
 
+![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0-EE4C2C?logo=pytorch&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.x-5C3EE8?logo=opencv&logoColor=white)
+![CosPlace](https://img.shields.io/badge/CosPlace-ResNet--18-green)
+![SuperGlue](https://img.shields.io/badge/SuperPoint%2BSuperGlue-Matching-orange)
+![NetworkX](https://img.shields.io/badge/NetworkX-A*%20Planning-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 Navigate a robot through a maze using only camera images — no map, GPS, or odometry required.
 
 Built for the Robot Vision course (ROB-GY 6203) at NYU. The system constructs a topological graph from explored images offline, then navigates in real-time by matching the robot's live camera feed against the graph using learned visual features.
