@@ -1,0 +1,12 @@
+data/textures/
+data/save/
+data/images/
+data/images_subsample/
+data/list.txt
+*.npy
+*.zip
+__pycache__/
+*.pyc
+.DS_Store
+loop_closures*.json
+startup.json

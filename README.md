@@ -2,7 +2,7 @@
 
 Navigate a robot through a maze using only camera images — no map, GPS, or odometry required.
 
-Built for the Robot Vision course at NYU. The system constructs a topological graph from explored images offline, then navigates in real-time by matching the robot's live camera feed against the graph using learned visual features.
+Built for the Robot Vision course (ROB-GY 6203) at NYU. The system constructs a topological graph from explored images offline, then navigates in real-time by matching the robot's live camera feed against the graph using learned visual features.
 
 ## How It Works
 
@@ -34,6 +34,34 @@ ONLINE:
                 SuperGlue Match → Relative Heading
                       ↓
                 Motor Control → Stuck Recovery if needed
+```
+
+## Project Structure
+
+```
+├── autonomous_navigator.py   # Main navigation pipeline (CosPlace + SuperGlue + A*)
+├── baseline.py               # Enhanced baseline with graph construction
+├── baseline_lv1.py           # Level 1 baseline implementation
+├── player.py                 # Game interface and keyboard controls
+├── environment.yaml          # Conda environment
+└── requirements.txt          # Python dependencies
+```
+
+## Setup
+
+```bash
+conda env create -f environment.yaml
+conda activate game
+```
+
+## Run
+
+```bash
+# Keyboard exploration
+python player.py
+
+# Autonomous navigation
+python autonomous_navigator.py
 ```
 
 ## Key Design Decisions
